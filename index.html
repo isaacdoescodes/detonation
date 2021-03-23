@@ -1,1 +1,85 @@
-Coming soon...
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detonation - Isaboo</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .load {
+            background-color: rgb(0, 174, 255);
+            height: 100%;
+            color: white;
+            text-align: center;
+            padding-top: 30%;
+        }
+
+        .welcome {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .displaytrans {
+            display: block;
+            transition: ease-in;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .color {
+            background-color: rgb(0, 0, 132);
+        }
+    </style>
+</head>
+
+<body id="body" onfullscreenchange="undetonate();">
+    <div id="btn"><button onclick="detonate()">Detonate this PC</button><br>
+        Press ESC or F11 to <i>undetonate</i><br>
+        Move mouse to edge of screen to hide
+    </div>
+    <img id="img" class="hidden" width="100%" src="BSOD.png" />
+</body>
+
+</html>
+
+<script>
+    var full = false;
+    function detonate() {
+        document.getElementById("btn").className = "hidden";
+        document.getElementById("img").className = "show";
+        document.getElementById("body").className = "color";
+        var elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+        full = true;
+    }
+    function undetonate() {
+        if (full) {
+            window.location = "";
+        }
+    }
+
+</script>
