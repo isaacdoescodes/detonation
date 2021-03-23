@@ -16,7 +16,6 @@
             margin: 0px;
             overflow: hidden;
             font-family: Tahoma, Geneva, Verdana, sans-serif;
-            padding-top: 30%;
             text-align: center;
         }
 
@@ -27,15 +26,29 @@
         .show {
             display: block;
         }
-
+        img {
+            position: fixed;
+            margin: 0px auto;
+        }
         .color {
             background-color: rgb(0, 0, 132);
+        }
+        button {
+            color: white;
+            background-color: rgb(223, 67, 39);
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 6px;
+            margin: 60px;
+        }
+        button:hover {
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body id="body" onfullscreenchange="undetonate();">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div id="btn"><button onclick="detonate()">Detonate this PC</button><br>
         Press ESC or F11 to <i>undetonate</i><br>
         Move mouse to edge of screen to hide
