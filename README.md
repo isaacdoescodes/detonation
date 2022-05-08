@@ -1,16 +1,8 @@
 # Detonation
 
-A prank web-toy for making a computer look like it's
-- crashed
-- been/being hacked
+A button which full screens a fake ‘blue screen of death’, making your friend think their computer has crashed.
 
-Simply
+[https://www.isaacdoescodes.com/detonation](https://www.isaacdoescodes.com/detonation)
 
- - Select your OS
- - Select a scenario
- - Set an event. e.g.
-   - Timer
-   - Mouse move
- - And prepare for detonation!
+https://www.tiktok.com/@isaacdoescodes/video/7066678679803383046
 
-Go to https://www.isaboo.co.uk/detonation to use
